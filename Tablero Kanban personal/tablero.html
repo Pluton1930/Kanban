@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mis Tableros - Kanban</title>
+  <link rel="stylesheet" href="Styles/tablero.css" />
+</head>
+<body>
+  <header>
+    <h1>Mis Tableros</h1>
+    <p id="bienvenida"></p>
+    <button id="logoutBtn"><a href="login.html"></a> Cerrar Sesión</button>
+  </header>
+
+  <main>
+    <section class="crear-tablero">
+      <h2>Crear nuevo tablero</h2>
+      <form id="formTablero">
+        <input type="text" id="nombreTablero" placeholder="Nombre del tablero" required />
+        <textarea id="descripcionTablero" placeholder="Descripción (opcional)"></textarea>
+        <button type="submit">Crear Tablero</button>
+      </form>
+    </section>
+
+    <section class="lista-tableros">
+      <h2>Tableros guardados</h2>
+      <div id="contenedorTableros"></div>
+    </section>
+  </main>
+
+  <!-- Modal de confirmación -->
+  <div id="modalConfirmacion" class="modal">
+    <div class="modal-contenido">
+      <p id="mensajeModal"></p>
+      <div class="modal-botones">
+        <button id="btnCancelar">Cancelar</button>
+        <button id="btnConfirmarEliminar">Eliminar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="Scripts/tablero.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('../imagenes/inicio.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+header {
+  background-color: rgba(0, 95, 115, 0.9);
+  color: white;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#volverBtn {
+  background: #ee6c4d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+.kanban-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.lista {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.lista h2 {
+  margin-top: 0;
+}
+
+.tarjeta {
+  background: #f0f0f0;
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  border-radius: 6px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tarjeta .contenido {
+  flex-grow: 1;
+}
+
+.eliminar {
+  color: #c0392b;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.lista form {
+  display: flex;
+  flex-direction: column;
+}
+
+.lista input {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.lista button {
+  background: #0a9396;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.lista button:hover {
+  background: #005f73;
+}
+
+.encabezado-lista {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.eliminar-lista {
+  color: #30c02b;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 6px;
+}
+
+.eliminar-lista:hover {
+  color: #922b21;
+}
+
+.form-lista {
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form-lista input {
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form-lista button {
+  background: #0a9396;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-lista button:hover {
+  background: #005f73;
+}
+
+.dragging {
+  opacity: 0.5;
+}
+
+.lista.over {
+  background-color: rgba(10, 147, 150, 0.1);
+  border: 2px dashed #0a9396;
+}
+/**Descripcion en el apartado de lista**/
+.descripcion-tablero {
+  margin-top: -0.5rem;
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  font-style: italic;
+}

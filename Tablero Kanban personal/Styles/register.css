@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('../imagenes/inicio.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+.campo {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.error, .feedback {
+  font-size: 0.85em;
+  min-height: 16px;
+  display: block;
+}
+
+.error {
+  color: red;
+}
+
+.feedback.valido {
+  color: green;
+}
+
+.feedback.invalido {
+  color: red;
+}
+
+button {
+  background-color: #0a9396;
+  color: white;
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #005f73;
+}
+
+/* Barra de fuerza */
+#strengthMeter {
+  width: 100%;
+  height: 6px;
+  background: #ddd;
+  border-radius: 3px;
+  margin: 6px 0;
+  overflow: hidden;
+}
+
+.strength-bar {
+  height: 100%;
+  width: 0%;
+  background: red;
+  transition: width 0.3s, background 0.3s;
+  border-radius: 3px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tablero Kanban</title>
+  <link rel="stylesheet" href="Styles/kanban.css" />
+</head>
+<body>
+  <header>
+  <div>
+    <h1 id="tituloTablero">Tablero</h1>
+    <p id="descripcionTablero" class="descripcion-tablero"></p>
+  </div>
+  <button id="volverBtn">← Volver a Tableros</button>
+</header>
+
+
+  <main>
+    <!-- Barra para añadir nueva lista -->
+    <form id="formNuevaLista" class="form-lista">
+      <input type="text" id="tituloLista" placeholder="Nombre de nueva lista" required />
+      <button type="submit">Agregar Lista</button>
+    </form>
+
+    <div class="kanban-container" id="kanban">
+      <!-- Listas serán agregadas aquí -->
+    </div>
+  </main>
+
+  <script src="Scripts/kanban.js"></script>
+</body>
+</html>
